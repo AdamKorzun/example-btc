@@ -1,0 +1,6 @@
+{
+    "transaction_dir": "/Desktop/Python/example-btc/pending_transactions",
+    "blocks_dir": "/Desktop/Python/example-btc/blocks",
+    "private_key_path": "/Desktop/Python/example-btc/private_key.pen",
+    "public_key_path": "/Desktop/Python/example-btc/public_key.pem"
+}

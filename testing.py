@@ -1,6 +1,11 @@
 from btc import *
 from Crypto.PublicKey import RSA
 import json
+from config_manager import ConfigManager
+
+
+config = ConfigManager()
+config.from_json('config.json')
 
 
 with open('private_key.pem', 'rb') as file:
@@ -32,3 +37,9 @@ miner = Miner()
 miner.verify_transaction(transaction)
 node = Node()
 print(node.verify_transaction(transaction))
+
+config = {
+    'transaction_dir':'/Desktop/Python/example-btc/pending_transactions',
+    'blocks_dir':'/Desktop/Python/example-btc/blocks'
+
+}
